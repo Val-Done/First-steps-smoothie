@@ -4,163 +4,195 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Smoothie</title>
+    
   </head>
   <body>
     <!-- Расставляем теги для навигции по сайту -->
     <header class="header">
-      <div class="header-top">
-        <h1>Organic</h1>
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">Story</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Testimonials</a></li>
+      <div class="header__top">
+                <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Shop</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Story</a></li>
+            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Testimonials</a></li>
           </ul>
         </nav>
-        <a class="logo" href="">
-          <img src="" alt="" />
-        </a>
-        <div class="personal">
-          <ul>
-            <li>
-              <a href=""><img src="" alt="" /></a>
+        <!-- Логотип -->
+        <h1 class="heading-title">Organic Smoothie</h1>
+        <div class="header__logo logo">
+          <a class="logo__link" href="#">
+          <img class="logo__img" src="" alt="logo" />
+        </a></div>
+        <!-- хедер иконки -->
+        <div class="header__personal personal">
+          <ul class="personal__list">
+            <li class="personal__item">
+              <a class="personal__link" href=""><img class="personal__icon-search" src="#" alt="search-icon" /></a>
             </li>
-            <li>
-              <a href=""><img src="" alt="" /></a>
+            <li class="personal__item">
+              <a class="personal__link" href=""><img class="personal__icon-user" src="#" alt="user-icon" /></a>
             </li>
-            <li>
-              <a href=""><img src="" alt="" /></a>
+            <li class="personal__item">
+              <a class="personal__link" href=""><img class="personal__cart-icon" src="#" alt="cart-icon" /> 
+                <span class="personal__cart-count">3</span></a>
             </li>
           </ul>
         </div>
-        <div class="social">
-          <ul>
-            <li>
-              <a href=""><img src="" alt="" /></a>
+            <!-- хедре социальные сети -->
+        <div class="header__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="socila__link" href=""><img class="social__icon" src="" alt="facebook" /></a>
             </li>
-            <li>
-              <a href=""><img src="" alt="" /></a>
+            <li class="social__item">
+              <a class="socila__link" href=""><img class="social__icon" src="" alt="pinterest" /></a>
             </li>
-            <li>
-              <a href=""><img src="" alt="" /></a>
+            <li class="social__item">
+              <a class="socila__link" href=""><img class="social__icon" src="" alt="instagram" /></a>
             </li>
           </ul>
         </div>
       </div>
+      <!-- Хедере контент -->
       <div class="heaer-content">
-        <button>Shop Now</button>
+        <button class="header__btn btn btn--green">Shop Now</button>
       </div>
     </header>
+    <!-- Секция смузи -->
     <section class="smoothie">
-      <div class="smothie-title">
-        <h2>What are these smoothie</h2>
+      <div class="smoothie__wrap">
+        <h2 class="smoohtie__title title ">What are these smoothie</h2>
       </div>
-      <div class="text-smootie">
-        A smoothie is a drink made from pureed raw fruit, vegetables, and
-        sometimes dairy products (milk, yogurt, ice-cream or cottage cheese),
-        typically using a blender. Smoothies may be made using other
-        ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g.
-        honey, sugar, stevia, or syrup), whey powder, plant milk, nuts, nut
-        butter, seeds, tea, chocolate, herbal supplements, or nutritional
-        supplements.
+      <div class="text-smoothie">
+        <P>A smoothie is a drink made from pureed raw fruit, vegetables, and
+          sometimes dairy products (milk, yogurt, ice-cream or cottage cheese),
+          typically using a blender. Smoothies may be made using other
+          ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g.
+          honey, sugar, stevia, or syrup), whey powder, plant milk, nuts, nut
+          butter, seeds, tea, chocolate, herbal supplements, or nutritional
+          supplements.</P>
       </div>
-      <div>
-        <img src="" alt="">
-          <h3></h3>
+      <div class="smoothie-img">
+        <img class="smoothie__img" src="#" alt="Plant Based">
+          <h3 class="smoothie__title">Plant Based</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Vegan">
+          <h3 class="smoothie__title">Vegan</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Paleo">
+          <h3 class="smoothie__title">Paleo</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Gluten-Free">
+          <h3 class="smoothie__title">Gluten-Free</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Corn-Free">
+          <h3 class="smoothie__title">Corn-Free</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Soy-Free">
+          <h3 class="smoothie__title">Soy-Free</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Ayurvedic">
+          <h3 class="smoothie__title">Ayurvedic</h3>
         </img>
-        <img src="" alt="">
-          <h3></h3>
+        <img class="smoothie__img" src="#" alt="Made With Love">
+          <h3 class="smoothie__title">Made With Love</h3>
         </img>
       </div>
     </section>
+      <!-- Состав смузи -->
     <section class="about">
-      <h2>What makes Smoothie an awesome drink?</h2>
+      <div class="about-wrap"></div>
+      <h2 class="about__title title">What makes Smoothie an awesome drink?</h2>
+      <img class="about__img" src="#" alt="Welcome summer">
 
       <div class="about-text">
-        <ul>
-          <li>Crunchy Puffs Texture</li>
-          <li>100 Calories per drink</li>
-          <li>4g Plant Protein</li>
-          <li>Good source of Magnesium & Vitamin B6</li>
-          <li>No Sugar in our Savory Flavors</li>
-          <li>Non-GMO, Vegan & Paleo</li>
-          <li>Gluten-Free & Grain-Free</li>
-          <li>Corn-Free & Soy-Free</li>
+        <ul class="about__list">
+          <li class="about__item">Crunchy Puffs Texture</li>
+          <li class="about__item">100 Calories per drink</li>
+          <li class="about__item">4g Plant Protein</li>
+          <li class="about__item">Good source of Magnesium & Vitamin B6</li>
+          <li class="about__item">No Sugar in our Savory Flavors</li>
+          <li class="about__item">Non-GMO, Vegan & Paleo</li>
+          <li class="about__item">Gluten-Free & Grain-Free</li>
+          <li class="about__item">Corn-Free & Soy-Free</li>
         </ul>
       </div>
-      <button class="about">About Organic Smoothie</button>
-    </section>
-
-    <section class="products">
-      <img class="dark-choco" src="" alt="" />
-      <img class="vegan" src="" alt="" />
-      <img class="lemon" src="" alt="" />
-      <img class="garlic" src="" alt="" />
-    </section>
-    <div class="button"></div>
-    <bt buy=""></bt>
-    <div class="button"></div>
-    <bt buy=""></bt>
-    <div class="button"></div>
-    <bt buy=""></bt>
-    <div class="button"></div>
-    <bt buy=""></bt>
-    <div class="button"></div>
-    <bt buy=""></bt>
-
-    <section class="story">
-      <div><h2>Our story</h2>
-        <div class="story">
-          <P>As products typically using raw or vegetables, smoothies include dietary
-            fiber (e.g. pulp,skin, and seeds) and so are thicker than fruit
-            juice,often with a consistency similar to a milkshake.</P>
-        </div>
-        <div><img src="" alt=""></div>
+      <div class="button-wrap">
+        <button class="about__btn btn">About Organic Smoothie</button>
       </div>
       
     </section>
-    <section class="testimonials">
-      <h2>Why clients LOVE us?</h2>
-      <div class="text-testimony"> <span><q>&#34;Smoothie is great. I don't know what else to say.I will let my mum know about this,she could really make use of Smoothies! Smoothies save my busines.&#34;<br> - from Santa Monica, CA</q></span> 
-      <img src="" alt="">
+    <!-- Виды смузи -->
+    <section class="products">
+      <div class="products__inner">
+        <img class="products__img products--choco" src="#" alt="Dark chocolate" />
+        <p class="products__text">Dark Chocolate Smoothie 100 ml</p>
+        <div class="button"><button class="btn__buy btn btn--choco "></bt></div>
+        
+        <img class="products__img products--vegan" src="#" alt="Vegan" />
+          <p class="products__text">Vegan Lettuce Smoothie 100 ml</p>
+          <div class="button"><button class="btn__buy btn btn--vegan "></bt></div>
+    
+          <img class="products__img products--lemon" src="#" alt="lemon" />
+          <p class="products__text">Lemon Ginger Smoothie 100 ml</p>
+          <div class="button"><button class="btn__buy btn btn--ginger "></bt></div>
+    
+       <img class="products__img products--garlic" src="#" alt="Garlic" />
+     <p class="products__text">Turmeric Garlic Smoothie 100 ml</p>
+     <div class="button"><button class="btn__buy btn btn--garlic "></bt></div>
+    
+    </div>
+       </section>
+    
+      <!-- Наша история -->
+    <section class="story">
+      <div class="story__inner">
+        <h2 class="story__title title">Our story</h2>
+        <div class="story__text">
+          <P>As products typically using raw or vegetables, smoothies include dietary
+            fiber (e.g. pulp,skin, and seeds) and so are thicker than fruit
+            juice,often with a consistency similar to a milkshake.</P>
+            <div class="btn-story__wrap"> <button class="story__btn btn btn--green">Who we are</button> </div>
+        </div>
+        <div class="story-img__wrap"><img class="story__img" src="#" alt="story"></div>
       </div>
     </section>
+
+    <!-- Секция свитетельства -->
+    <section class="testimonials">
+      <div class="testimonials-wrap"><h2 class="testimonials__title title">Why clients LOVE us?</h2></div>
+      <div class="testimonials_text"> <span class="testimonials__text-item"><q>&#34;Smoothie is great. I don't know what else to say.I will let my mum know about this,she could really make use of Smoothies! Smoothies save my busines.&#34;<br> - from Santa Monica, CA</q></span> 
+      <div class="img-wrap"><img class="testimonials__img" src="#" alt="testimonials"></div>
+      </div>
+      <!-- <div class="testimonials-button"><button></button></div> ссылка или кнопка -->
+    </section>
+     <!-- Секция блог -->
     <section class="blog">
-      <h2>Our blog</h2>
-      <img src="" alt="">
-      <article>
-        <h3>ASAFOETID -THE NEXT TURMERIC?</h3>
-        <P>Jun 16,2020</P>
-        <p>if the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed juice doesn't even have to be blended kike a smoothie, i.e. a green juice or anything... 
-          <h4>Read more</h4>  <a href=""></a> </p> 
+      <div class="blog-title__wrap">
+        <h2 class="blog__title title">Our blog</h2>
+      </div>
+      <div class="blog-img__wrap">
+        <img class="blog__img" src="#" alt="Asafoetida">
+      </div>
+      
+      <article class="blog-text">
+        <h3 class="blog__article-title">ASAFOETIDA -THE NEXT TURMERIC?</h3>
+        <time class="blog__article-time" datetime="Jun 16,2020"></time>
+        <div class="blog__text-text">
+          <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed juice doesn't even have to be blended kike a smoothie, i.e. a green juice or anything... 
+            <h4>Read more</h4>  <a href="#"></a> </p>
+        </div> 
 
       </article>
     </section>
     <section class="instagram">
-      <h2>ashasuperfoods</h2>
+      <h2>Ashasuperfoods</h2>
       <div>
         <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
       </div>
