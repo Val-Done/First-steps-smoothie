@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Muli-Bold;
+  src: url(../fonts/Muli-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Muli-BoldItalic;
+  src: url(../fonts/Muli-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Muli-ExtraBold;
+  src: url(../fonts/Muli-ExtraBold.woff);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Muli-Italic;
+  src: url(../fonts/Muli-Italic.ttf);
+}
+@font-face {
+  font-family: Muli-Regular;
+  src: url(../fonts/Muli-Regular.woff);
+}
+@font-face {
+  font-family: Muli-Semi-BoldItalic;
+  src: url(../fonts/Muli-Semi-BoldItalic.ttf);
+}
+.header {
+  background-image: url(../images/header/header-bg-img.png);
+  min-height: 100vh;
+}
+.header__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 70px 100px 100px;
+}
+.header__nav {
+  width: 540px;
+}
+.nav {
+}
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav__item {
+}
+.nav__link {
+  text-decoration: none;
+}
+.heading-title {
+  visibility: hidden;
+}
+.header__logo {
+  /* padding: 70px; */
+}
+.logo {
+}
+.logo__link {
+}
+.logo__img {
+  width: 211px;
+  height: 72px;
+  margin: 0;
+}
+.header__personal {
+}
+.personal {
+}
+.personal__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.personal__item {
+}
+.personal__link {
+}
+.personal__icon-search {
+}
+.personal__icon-user {
+}
+.personal__cart-icon {
+}
+.personal__cart-count {
+}
+.header__social {
+}
+.social {
+}
+.social__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.social__item {
+}
+.socila__link {
+}
+.social__icon {
+}
+.header__content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.header__btn {
+  align-items: center;
+}
+.btn {
+  width: 280px;
+  height: 70px;
+  border-radius: 35px;
+}
+.btn--green {
+  background-color: #0aa566;
+  color: white;
+}
