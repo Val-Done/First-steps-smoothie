@@ -17,7 +17,7 @@ body {
 }
 @font-face {
   font-family: Muli-ExtraBold;
-  src: url(../fonts/Muli-ExtraBold.woff);
+  src: url(../fonts/Muli-ExtraBold.ttf);
   font-weight: 800;
 }
 @font-face {
@@ -26,7 +26,7 @@ body {
 }
 @font-face {
   font-family: Muli-Regular;
-  src: url(../fonts/Muli-Regular.woff);
+  src: url(../fonts/Muli-Regular.ttf);
 }
 @font-face {
   font-family: Muli-Semi-BoldItalic;
@@ -46,22 +46,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 100px 100px;
+  padding: 80px 100px 100px;
   flex-wrap: wrap;
   position: relative;
 }
 .header__nav {
-  width: 540px;
+  width: 640px;
 }
 .nav {
 }
 .nav__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 .nav__item {
+  display: flex;
+  justify-content: space-between;
 }
 .nav__link {
   text-decoration: none;
@@ -76,7 +78,7 @@ body {
 .header__logo {
   padding: 0;
   position: absolute;
-  right: 44%;
+  right: 45%;
   padding: 0;
 }
 .logo {
@@ -88,7 +90,7 @@ body {
   height: 72px;
 }
 .header__right-block {
-  width: 420px;
+  width: 600px;
   display: flex;
   justify-content: space-between;
 }
@@ -100,19 +102,40 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 .personal__item {
 }
 .personal__link {
+  padding-left: 30px;
 }
 .personal__icon-search {
 }
 .personal__icon-user {
+  width: 20px;
+  height: 24px;
 }
 .personal__cart-icon {
 }
 .personal__cart-count {
+  width: 6px;
+  height: 7px;
+  font-family: Muli;
+  font-size: 10px;
+  color: #000000;
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 16px;
+  height: 16px;
+  background: white;
+  padding: 3px 0px 0px 9px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .header__social {
 }
@@ -121,14 +144,17 @@ body {
 .social__list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
 }
 .social__item {
+  display: flex;
+  justify-content: space-between;
 }
 .socila__link {
+  padding-right: 30px;
 }
 .social__icon {
+  
 }
 
 .header__btn {
@@ -144,6 +170,11 @@ body {
 .btn--green {
   background-color: #0aa566;
   color: white;
+}
+.header__btn-arrow {
+  width: 30px;
+  height: 16px;
+  color: red;
 }
 .smoothie {
 }
