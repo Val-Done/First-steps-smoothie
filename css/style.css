@@ -5,31 +5,31 @@ body {
 }
 
 @font-face {
-  font-family: Muli-Bold;
+  font-family: "Muli-Bold";
   src: url(../fonts/Muli-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
-  font-family: Muli-BoldItalic;
+  font-family: "Muli-BoldItalic";
   src: url(../fonts/Muli-BoldItalic.ttf);
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
-  font-family: Muli-ExtraBold;
+  font-family: "Muli-ExtraBold";
   src: url(../fonts/Muli-ExtraBold.ttf);
   font-weight: 800;
 }
 @font-face {
-  font-family: Muli-Italic;
+  font-family: "Muli-Italic";
   src: url(../fonts/Muli-Italic.ttf);
 }
 @font-face {
-  font-family: Muli-Regular;
+  font-family: "Muli-Regular";
   src: url(../fonts/Muli-Regular.ttf);
 }
 @font-face {
-  font-family: Muli-Semi-BoldItalic;
+  font-family: "Muli-Semi-BoldItalic";
   src: url(../fonts/Muli-Semi-BoldItalic.ttf);
 }
 .header {
@@ -120,7 +120,7 @@ body {
 .personal__cart-count {
   width: 6px;
   height: 7px;
-  font-family: Muli;
+  font-family: Muli-Bold;
   font-size: 10px;
   color: #000000;
   position: absolute;
@@ -154,7 +154,6 @@ body {
   padding-right: 30px;
 }
 .social__icon {
-  
 }
 
 .header__btn {
@@ -170,21 +169,51 @@ body {
 .btn--green {
   background-color: #0aa566;
   color: white;
+  position: relative;
 }
-.header__btn-arrow {
+.btn--green::after {
+  content: "";
+  display: block;
+  background-image: url(../images/header/arrow-png.png);
   width: 30px;
   height: 16px;
-  color: red;
+  position: absolute;
+  top: 40%;
+  right: 7%;
 }
+
 .smoothie {
 }
 .smoothie__title {
+  text-align: center;
+  color: #f7ae3b;
+  padding: 0 0 55px 0;
 }
 .title {
+  font-family: Muli-ExtraBold;
 }
 .smoothie__text {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.94;
+  padding: 0px 457px 55px;
+}
+.smoothie__wrap {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px 250px;
+  padding: 0px 457px;
 }
 .smoothie__box {
+  text-align: center;
+  border: 1px solid red;
+  padding: 20px;
 }
 .smoothie__img {
+  width: 79px;
+  height: 68px;
+  /* margin: 35px 2px 21px 10px;
+  object-fit: contain; */
+  /* background-color: #612a16 */
 }
