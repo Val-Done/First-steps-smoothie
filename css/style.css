@@ -208,7 +208,7 @@ body {
 .smoothie__box {
   text-align: center;
   border: 1px solid red;
-  padding: 20px;
+  padding: 20px 0 0 0;
 }
 .smoothie__img {
   width: 79px;
@@ -216,4 +216,203 @@ body {
   /* margin: 35px 2px 21px 10px;
   object-fit: contain; */
   /* background-color: #612a16 */
+}
+.about {
+}
+.about__wrap {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 1920px;
+  height: 800px; */
+  margin: 0;
+  padding: 64px 356px 94px 143px;
+  background-color: #14826f;
+}
+.about__img {
+  width: 690px;
+  height: 818px;
+}
+.about__text {
+  margin-left: 170px;
+}
+.about__title {
+  font-family: "Muli-ExtraBold";
+}
+.title {
+}
+.about__list {
+}
+.about__item {
+}
+.about__item-thin {
+}
+.about__btn {
+}
+.btn {
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+.products__wrap {
+  width: 25%;
+  align-items: center;
+}
+
+.products__wrap--choco {
+}
+.products__img {
+  display: flex;
+  justify-content:center ;
+
+
+ 
+}
+.products__title {
+}
+.products__size {
+}
+.btn__buy {
+}
+.btn--choco {
+}
+.products__wrap--vegan {
+}
+.btn--vegan {
+}
+.products__wrap--lemon {
+}
+.btn--ginger {
+}
+.products__wrap--garlic {
+}
+.btn--garlic {
+}
+.story {
+}
+.story__title {
+}
+.story__wrap {
+}
+.story__box {
+}
+.story__text {
+}
+.story__btn {
+}
+.btn--green {
+}
+.story__img-wrap {
+}
+.story__img {
+}
+.testimonials {
+}
+.testimonials__wrap {
+}
+.testimonials__box {
+}
+.testimonials__title {
+}
+.testimonials__text {
+}
+.testimonials__quote {
+}
+.testimonials__img {
+}
+.testimonials__slider {
+}
+.testimonials__btn-right {
+}
+.testimonials__btn-left {
+}
+.blog {
+}
+.blog__wrap {
+}
+.blog__title {
+}
+.blog__img {
+}
+.blog__article {
+}
+.blog__article-subtitle {
+}
+.blog__article-time {
+}
+.blog__text {
+}
+.blog__link {
+}
+.blog__link-item {
+}
+.instagram {
+}
+.instagram__title {
+}
+.instagram__wrap {
+}
+.instagram__inner {
+}
+.instagram__wrap-img {
+}
+.instagram__img {
+}
+.footer {
+}
+.footer__top {
+}
+.footer__logo {
+}
+.logo {
+}
+.logo__link {
+}
+.logo__img {
+}
+.footer__info {
+}
+.footer__title {
+}
+.footer__list {
+}
+.footer__item {
+}
+.info__link {
+}
+.footer__payment {
+}
+.footer__img {
+}
+.footer__subscribe {
+}
+.footer__title-subscribe {
+}
+.footer__social {
+}
+.social {
+}
+.social__heading {
+}
+.footer__social-list {
+}
+.footer__social-item {
+}
+.social__item {
+}
+.socila__link {
+}
+.footer__icon {
+}
+.footer_social-item {
+}
+.social__link {
+}
+.footer__small {
+}
+.footer__bottom-arrow {
+}
+.footer__bottom-text {
+}
+.footer__go-top {
 }
