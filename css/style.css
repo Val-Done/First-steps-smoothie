@@ -328,31 +328,35 @@ body {
 .btn--garlic {
 }
 .story {
+  display: flex;
 }
 .story__title {
   text-align: center;
-  
-font-size: 50px;
-line-height: 40px;
-font-weight: 800;
-letter-spacing: -0.02em;
-color: #f7ae3b;
+
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f7ae3b;
 }
 .story__wrap {
   display: flex;
-  
+  flex-direction: column;
 }
 .story__box {
   display: flex;
-  justify-content: right;
+
+  justify-content: center;
+  align-items: center;
+  max-width: 512px;
 }
 .story__text {
   text-align: center;
-  
-font-size: 18px;
-line-height: 35px;
-font-weight: 400;
-color: #1e1e1e;
+
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #1e1e1e;
 }
 .story__btn {
 }
@@ -364,19 +368,47 @@ color: #1e1e1e;
 }
 .story__img {
 }
+/* Set style for testimonials */
 .testimonials {
+  background-color: #64301b;
+  background-image: url(../images/Testimonials/sarah_a_bg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  /* font-family: Muli; */
+  font-size: 200px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #521905;
 }
 .testimonials__wrap {
 }
 .testimonials__box {
 }
 .testimonials__title {
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f7ae3b;
 }
 .testimonials__text {
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #ffffff;
 }
 .testimonials__quote {
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: 600;
+  font-style: italic;
+  color: #f7ae3b;
 }
 .testimonials__img {
+  width: 220px;
+  height: 218px;
 }
 .testimonials__slider {
 }
@@ -384,43 +416,96 @@ color: #1e1e1e;
 }
 .testimonials__btn-left {
 }
+/* Style for section Blog */
 .blog {
+  display: flex;
 }
 .blog__wrap {
+  display: flex;
+  justify-content: left;
 }
 .blog__title {
+  text-align: left;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f7ae3b;
 }
 .blog__img {
+  /* width: 555px;
+height: 400px; */
 }
 .blog__article {
 }
 .blog__article-subtitle {
+  font-family: "Muli-Bold";
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f2612d;
 }
 .blog__article-time {
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #1e1e1e;
 }
 .blog__text {
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #1e1e1e;
 }
 .blog__link {
 }
 .blog__link-item {
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 800;
+  font-style: italic;
+  color: #1e1e1e;
 }
+/* Style for instagram */
 .instagram {
 }
 .instagram__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0aa566;
 }
 .instagram__wrap {
+  display: flex;
 }
 .instagram__inner {
+  display: flex;
+  justify-content: space-between;
 }
 .instagram__wrap-img {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
 }
 .instagram__img {
+  width: 384px;
+  height: 384px;
 }
+/* Style for footer */
 .footer {
 }
 .footer__top {
+  background-color: #f6a93e;
+  display: flex;
+  justify-content: space-between;
 }
+
 .footer__logo {
+  width: 211px;
+height: 72px;
 }
 .logo {
 }
@@ -431,26 +516,57 @@ color: #1e1e1e;
 .footer__info {
 }
 .footer__title {
+  
+font-size: 26px;
+line-height: 40px;
+font-weight: 800;
+letter-spacing: -0.02em;
+color: #ffffff;
 }
 .footer__list {
 }
 .footer__item {
 }
 .info__link {
+  
+font-size: 18px;
+line-height: 35px;
+font-weight: 700;
+letter-spacing: -0.02em;
+color: #6d450c;
 }
 .footer__payment {
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap ;
 .footer__img {
+  display: flex;
+  align-items: center;
+  
+
 }
 .footer__subscribe {
 }
 .footer__title-subscribe {
+  
+font-size: 26px;
+line-height: 40px;
+font-weight: 800;
+letter-spacing: -0.02em;
+color: #ffffff;
 }
 .footer__social {
 }
 .social {
 }
 .social__heading {
+  
+font-size: 18px;
+line-height: 40px;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+color: #6d450c;
 }
 .footer__social-list {
 }
@@ -467,10 +583,21 @@ color: #1e1e1e;
 .social__link {
 }
 .footer__small {
+  
+font-size: 13px;
+line-height: 35px;
+font-weight: 400;
+letter-spacing: 0.02em;
+color: #af8a82;
 }
 .footer__bottom-arrow {
 }
 .footer__bottom-text {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .footer__go-top {
 }
