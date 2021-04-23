@@ -27,11 +27,13 @@ body {
 @font-face {
   font-family: "Muli-Regular";
   src: url(../fonts/Muli-Regular.ttf);
+  font-weight: normal;
 }
 @font-face {
   font-family: "Muli-Semi-BoldItalic";
   src: url(../fonts/Muli-Semi-BoldItalic.ttf);
 }
+/* Style for Header */
 .header {
   display: flex;
   flex-direction: column;
@@ -41,17 +43,23 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
+/* Genera style for header top  */
+.header__container {
+  max-width: 1710px;
+  height: 31px;
+  padding: 100px 100px 100px;
+}
 .header__top {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 100px 100px;
+
   flex-wrap: wrap;
   position: relative;
 }
 .header__nav {
   width: 640px;
+  height: 39px;
 }
 .nav {
 }
@@ -67,10 +75,14 @@ body {
 }
 .nav__link {
   text-decoration: none;
+  font-family: "Muli-Regular", sans-serif;
   text-transform: uppercase;
-  color: white;
-  size: 16px;
-  font-family: "Muli-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 .heading-title {
   visibility: hidden;
@@ -90,7 +102,7 @@ body {
   height: 72px;
 }
 .header__right-block {
-  width: 600px;
+  /* width: 600px; */
   display: flex;
   justify-content: space-between;
 }
@@ -141,13 +153,12 @@ body {
 .header__social {
 }
 .social__list::before {
-  content:"";
-  display:block;
+  content: "";
+  display: block;
   width: 47px;
   height: 2px;
   margin: 10px 65px 0px 33px;
-  background:#ffd68f ;
-  
+  background: #ffd68f;
 }
 .social {
 }
@@ -161,12 +172,14 @@ body {
   justify-content: space-between;
 }
 .socila__link {
-  padding-right: 30px;
+  padding-right: 28px;
 }
 .social__icon {
+  width: 10px;
+  height: 17px;
   background-color: #fff;
-  width: 39px;
-  height: 39px;
+  background-position: 0% 0%;
+  background-size: 150px, 150px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -208,7 +221,7 @@ body {
   padding: 0 0 55px 0;
 }
 .title {
-  font-family: Muli-ExtraBold;
+  font-family: "Muli-ExtraBold";
 }
 .smoothie__text {
   text-align: center;
@@ -255,6 +268,12 @@ body {
 }
 .about__title {
   font-family: "Muli-ExtraBold";
+
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .title {
 }
@@ -274,17 +293,16 @@ body {
 }
 .products__wrap {
   width: 25%;
+  height: 720px;
   align-items: center;
 }
 
 .products__wrap--choco {
+  background-color: #602814;
 }
 .products__img {
   display: flex;
-  justify-content:center ;
-
-
- 
+  justify-content: center;
 }
 .products__title {
 }
@@ -295,32 +313,54 @@ body {
 .btn--choco {
 }
 .products__wrap--vegan {
+  background-color: #188274;
 }
 .btn--vegan {
 }
-.products__wrap--lemon {
+.products__wrap--ginger {
+  background-color: #f7ae3b;
 }
 .btn--ginger {
 }
 .products__wrap--garlic {
+  background-color: #c24419;
 }
 .btn--garlic {
 }
 .story {
 }
 .story__title {
+  text-align: center;
+  
+font-size: 50px;
+line-height: 40px;
+font-weight: 800;
+letter-spacing: -0.02em;
+color: #f7ae3b;
 }
 .story__wrap {
+  display: flex;
+  
 }
 .story__box {
+  display: flex;
+  justify-content: right;
 }
 .story__text {
+  text-align: center;
+  
+font-size: 18px;
+line-height: 35px;
+font-weight: 400;
+color: #1e1e1e;
 }
 .story__btn {
 }
 .btn--green {
 }
 .story__img-wrap {
+  display: flex;
+  justify-content: right;
 }
 .story__img {
 }
