@@ -1,9 +1,3 @@
-html,
-body {
-  box-sizing: border-box;
-  font-family: "Muli-Regular", sans-serif;
-}
-
 @font-face {
   font-family: "Muli-Bold";
   src: url(../fonts/Muli-Bold.ttf);
@@ -33,6 +27,11 @@ body {
   font-family: "Muli-Semi-BoldItalic";
   src: url(../fonts/Muli-Semi-BoldItalic.ttf);
 }
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Muli-Regular", sans-serif;
+}
 /* Style for Header */
 .header {
   display: flex;
@@ -42,6 +41,7 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  margin: 0 0 100px 0;
 }
 /* Genera style for header top  */
 .header__container {
@@ -53,13 +53,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   flex-wrap: wrap;
   position: relative;
 }
 .header__nav {
   width: 640px;
-  height: 39px;
 }
 .nav {
 }
@@ -102,7 +100,7 @@ body {
   height: 72px;
 }
 .header__right-block {
-  /* width: 600px; */
+  width: 600px;
   display: flex;
   justify-content: space-between;
 }
@@ -178,8 +176,7 @@ body {
   width: 10px;
   height: 17px;
   background-color: #fff;
-  background-position: 0% 0%;
-  background-size: 150px, 150px;
+  background-size: 40px, 40px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -212,8 +209,9 @@ body {
   top: 40%;
   right: 7%;
 }
-
+/* Style for section smoothies  */
 .smoothie {
+  margin: 0 0 100px 0;
 }
 .smoothie__title {
   text-align: center;
@@ -230,11 +228,14 @@ body {
   line-height: 1.94;
   padding: 0px 457px 55px;
 }
+.smoothie__conteiner {
+  max-width: 1000px;
+  display: flex;
+}
 .smoothie__wrap {
+  justify-content: center;
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: 250px 250px 250px 250px;
-  padding: 0px 457px;
 }
 .smoothie__box {
   text-align: center;
@@ -244,95 +245,205 @@ body {
 .smoothie__img {
   width: 79px;
   height: 68px;
-  /* margin: 35px 2px 21px 10px;
-  object-fit: contain; */
-  /* background-color: #612a16 */
 }
+/* Style for section about smoothies */
 .about {
 }
 .about__wrap {
   display: flex;
-  justify-content: space-evenly;
-  /* width: 1920px;
-  height: 800px; */
   margin: 0;
-  padding: 64px 356px 94px 143px;
+  padding: 64px 256px 94px 143px;
   background-color: #14826f;
+  position: relative;
 }
 .about__img {
+  position: absolute;
   width: 690px;
   height: 818px;
+  top: 9%;
+  left: 6%;
+  z-index: 100;
+}
+.about__text-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  align-items: flex-start;
+  margin-left: 60%;
+  position: relative;
 }
 .about__text {
-  margin-left: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  /* margin-left: 70%; */
 }
 .about__title {
-  font-family: "Muli-ExtraBold";
+  justify-content: flex-end;
 
+  font-family: "Muli-ExtraBold";
   font-size: 55px;
   line-height: 60px;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #ffffff;
+  position: relative;
+}
+.about__title::after {
+  content: url(../images/About/lineunder-text.png);
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 11%;
+}
+.about__title-part {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #cae941;
 }
 .title {
 }
 .about__list {
+  list-style-image: url(../images/About/Component.png);
+  margin: 0 0 50px;
 }
+
 .about__item {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 20px 0;
 }
+
 .about__item-thin {
+  font-size: 21px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
 }
 .about__btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 20px;
+  font-size: 21px;
+  line-height: 22px;
+  font-weight: 800;
+  width: 382px;
+  height: 63px;
+  color: #ffffff;
+  border: 2px solid #f8b231;
+  border-radius: 30px;
+  background-color: #118570;
+}
+.about__btn::after {
+  content: url(../images/About/arrow_about.png);
+  display: block;
+  position: absolute;
+  left: 50%;
 }
 .btn {
 }
+/* set style for products */
 .products {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 .products__wrap {
   width: 25%;
   height: 720px;
   align-items: center;
+  position: relative;
 }
 
 .products__wrap--choco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #602814;
 }
 .products__img {
-  display: flex;
-  justify-content: center;
+  width: 119px;
+  height: 303px;
 }
 .products__title {
+  font-size: 24px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
 }
 .products__size {
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 .btn__buy {
+  width: 207px;
+  height: 63px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  color: #fff;
+  text-align: left;
+  padding-left: 40px;
+}
+.btn__buy::after {
+  content: url(../images/Products/arrow_products.png);
+  display: block;
+  position: absolute;
+  bottom: 17%;
+  right: 35%;
 }
 .btn--choco {
+  background-color: #672b13;
 }
 .products__wrap--vegan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #188274;
 }
 .btn--vegan {
+  background-color: #1c8772;
 }
 .products__wrap--ginger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f7ae3b;
 }
 .btn--ginger {
+  background-color: #f9b13c;
 }
 .products__wrap--garlic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #c24419;
 }
 .btn--garlic {
+  background-color: #c74918;
 }
+/* Set style for Story */
 .story {
   display: flex;
+  margin-bottom: 80px;
 }
 .story__title {
-  text-align: center;
-
+  /* text-align: center; */
   font-size: 50px;
   line-height: 40px;
   font-weight: 800;
@@ -341,17 +452,19 @@ body {
 }
 .story__wrap {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
+  justify-content: space-between;
 }
 .story__box {
   display: flex;
-
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+    align-items: flex-start;
   max-width: 512px;
+  margin: 0 0 0 310px;
 }
 .story__text {
-  text-align: center;
+  text-align: left;
 
   font-size: 18px;
   line-height: 35px;
@@ -359,6 +472,10 @@ body {
   color: #1e1e1e;
 }
 .story__btn {
+  width: 304px;
+height: 63px;
+background-color: #0aa566;
+border-radius: 30px;
 }
 .btn--green {
 }
@@ -498,14 +615,18 @@ height: 400px; */
 .footer {
 }
 .footer__top {
+  position: relative;
   background-color: #f6a93e;
   display: flex;
   justify-content: space-between;
 }
 
 .footer__logo {
+  position: absolute;
+  left: 7%;
+  top: 40%;
   width: 211px;
-height: 72px;
+  height: 72px;
 }
 .logo {
 }
@@ -516,57 +637,52 @@ height: 72px;
 .footer__info {
 }
 .footer__title {
-  
-font-size: 26px;
-line-height: 40px;
-font-weight: 800;
-letter-spacing: -0.02em;
-color: #ffffff;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .footer__list {
 }
 .footer__item {
 }
 .info__link {
-  
-font-size: 18px;
-line-height: 35px;
-font-weight: 700;
-letter-spacing: -0.02em;
-color: #6d450c;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #6d450c;
 }
 .footer__payment {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .footer__img {
   display: flex;
-  align-items: center;
-  
-
+  justify-content: space-evenly;
 }
 .footer__subscribe {
 }
 .footer__title-subscribe {
-  
-font-size: 26px;
-line-height: 40px;
-font-weight: 800;
-letter-spacing: -0.02em;
-color: #ffffff;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .footer__social {
 }
 .social {
 }
 .social__heading {
-  
-font-size: 18px;
-line-height: 40px;
-font-weight: 800;
-text-transform: uppercase;
-letter-spacing: -0.02em;
-color: #6d450c;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #6d450c;
 }
 .footer__social-list {
 }
@@ -583,12 +699,11 @@ color: #6d450c;
 .social__link {
 }
 .footer__small {
-  
-font-size: 13px;
-line-height: 35px;
-font-weight: 400;
-letter-spacing: 0.02em;
-color: #af8a82;
+  font-size: 13px;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #af8a82;
 }
 .footer__bottom-arrow {
 }
