@@ -31,23 +31,23 @@ html,
 body {
   box-sizing: border-box;
   font-family: "Muli-Regular", sans-serif;
+  * margin: 0;
+  * padding: 0;
 }
 /* Style for Header */
 .header {
-  display: flex;
-  flex-direction: column;
   color: white;
   background-image: url(../images/header/header-bg-img\ original.png);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  margin: 0 0 100px 0;
+    padding-top: 100px;
 }
 /* Genera style for header top  */
 .header__container {
+  
   max-width: 1710px;
-  height: 31px;
-  padding: 100px 100px 100px;
+  margin: 0 auto;
 }
 .header__top {
   display: flex;
@@ -57,19 +57,23 @@ body {
   position: relative;
 }
 .header__nav {
-  width: 640px;
+  margin-right: 35px;
+}
+.header__nav:last-child {
+  margin: 0px;
 }
 .nav {
 }
 .nav__list {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   list-style: none;
+  padding-left: 0;
 }
+
 .nav__item {
-  display: flex;
-  justify-content: space-between;
+  margin-left: 35px;
 }
 .nav__link {
   text-decoration: none;
@@ -100,9 +104,8 @@ body {
   height: 72px;
 }
 .header__right-block {
-  width: 600px;
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+  
 }
 .header__personal {
 }
@@ -111,13 +114,21 @@ body {
 .personal__list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  
+  
+
   position: relative;
+  
 }
 .personal__item {
+  margin-right: 45px;
+
+}
+.personal__item:last-child {
+  margin: 0px;
 }
 .personal__link {
-  padding-left: 30px;
+  
 }
 .personal__icon-search {
 }
@@ -155,7 +166,7 @@ body {
   display: block;
   width: 47px;
   height: 2px;
-  margin: 10px 65px 0px 33px;
+  margin: 10px 38px 0px 48px;
   background: #ffd68f;
 }
 .social {
@@ -164,30 +175,41 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding-left: 0px;
 }
 .social__item {
   display: flex;
-  justify-content: space-between;
-}
-.socila__link {
-  padding-right: 28px;
-}
-.social__icon {
-  width: 10px;
-  height: 17px;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  align-items: center;
   background-color: #fff;
-  background-size: 40px, 40px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
+.social__item:last-child {
+  margin: 0px;
+}
+.socila__link {
+  
+}
+.social__icon {
+  
+}
+.header__btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header__btn {
+  
   width: 270px;
   height: 70px;
-  align-self: center;
+  margin-top: 105px;
 }
 .btn {
   border-radius: 35px;
@@ -211,12 +233,13 @@ body {
 }
 /* Style for section smoothies  */
 .smoothie {
-  margin: 0 0 100px 0;
+  padding: 100px 0 ;
 }
 .smoothie__title {
   text-align: center;
   color: #f7ae3b;
-  padding: 0 0 55px 0;
+  
+  
 }
 .title {
   font-family: "Muli-ExtraBold";
@@ -226,7 +249,9 @@ body {
   font-size: 18px;
   letter-spacing: normal;
   line-height: 1.94;
-  padding: 0px 457px 55px;
+  max-width: 905px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 .smoothie__conteiner {
   max-width: 1000px;
@@ -248,13 +273,17 @@ body {
 }
 /* Style for section about smoothies */
 .about {
+ 
+  
 }
 .about__wrap {
   display: flex;
-  margin: 0;
-  padding: 64px 256px 94px 143px;
-  background-color: #14826f;
-  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+   background-color: #14826f;
+    position: relative;
+     min-height: 765px;
 }
 .about__img {
   position: absolute;
@@ -264,32 +293,26 @@ body {
   left: 6%;
   z-index: 100;
 }
-.about__text-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-self: flex-start;
-  align-items: flex-start;
-  margin-left: 60%;
-  position: relative;
-}
+
 .about__text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content:space-between ;
+  margin-right: 18%;
 
-  /* margin-left: 70%; */
+  
 }
 .about__title {
-  justify-content: flex-end;
-
+  
+  text-align: center;
   font-family: "Muli-ExtraBold";
   font-size: 55px;
   line-height: 60px;
   font-weight: 800;
-  letter-spacing: -0.02em;
+   letter-spacing: -0.02em;
   color: #ffffff;
   position: relative;
+  max-width: 590px;
 }
 .about__title::after {
   content: url(../images/About/lineunder-text.png);
@@ -299,6 +322,7 @@ body {
   left: 11%;
 }
 .about__title-part {
+  
   font-size: 55px;
   line-height: 60px;
   font-weight: 800;
@@ -309,7 +333,7 @@ body {
 }
 .about__list {
   list-style-image: url(../images/About/Component.png);
-  margin: 0 0 50px;
+  /* margin: 0 0 50px; */
 }
 
 .about__item {
@@ -440,7 +464,7 @@ body {
 /* Set style for Story */
 .story {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 .story__title {
   /* text-align: center; */
@@ -452,14 +476,14 @@ body {
 }
 .story__wrap {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
 }
 .story__box {
   display: flex;
   flex-direction: column;
   justify-content: left;
-    align-items: flex-start;
+  align-items: flex-start;
   max-width: 512px;
   margin: 0 0 0 310px;
 }
@@ -473,9 +497,10 @@ body {
 }
 .story__btn {
   width: 304px;
-height: 63px;
-background-color: #0aa566;
-border-radius: 30px;
+  height: 63px;
+  background-color: #0aa566;
+  border-radius: 30px;
+  margin-top: 58px;
 }
 .btn--green {
 }
@@ -487,36 +512,58 @@ border-radius: 30px;
 }
 /* Set style for testimonials */
 .testimonials {
+  display: flex;
+  justify-content: center;
   background-color: #64301b;
   background-image: url(../images/Testimonials/sarah_a_bg.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0.6;
-  /* font-family: Muli; */
-  font-size: 200px;
   line-height: 40px;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #521905;
+  height: 750px;
 }
 .testimonials__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .testimonials__box {
+  max-width: 30%;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 60px;
+  margin-top: 117px;
+}
+.testimonials__box::after {
+  content: url(../images/Testimonials/dots_3973.png);
+  display: block;
+  top: -10%;
+  right: -10%;
+  position: absolute;
 }
 .testimonials__title {
+  text-align: center;
   font-size: 50px;
   line-height: 40px;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #f7ae3b;
+  margin-bottom: 70px;
 }
 .testimonials__text {
+  text-align: center;
   font-size: 18px;
   line-height: 35px;
   font-weight: 400;
   color: #ffffff;
 }
 .testimonials__quote {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   line-height: 45px;
   font-weight: 600;
@@ -527,11 +574,21 @@ border-radius: 30px;
   width: 220px;
   height: 218px;
 }
+
 .testimonials__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .testimonials__btn-right {
+  width: 30px;
+  height: 16px;
+  background-color: #fcb438;
 }
 .testimonials__btn-left {
+  width: 30px;
+  height: 16px;
+  background-color: #fcb438;
 }
 /* Style for section Blog */
 .blog {
